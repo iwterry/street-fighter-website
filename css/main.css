@@ -1,0 +1,70 @@
+/* set background color of body */
+body {
+	background-color: black; 
+}
+/* styling main container */
+.main {
+	background-color: white; 
+	margin-top: 110px;
+	padding-left: 100px; 
+	min-width: 1200px;
+	height: 500px; 
+	position: relative; 
+	z-index: 1;
+}
+/* styling ryu div */
+.ryu {
+	width: 659px;
+	height: 494px; 
+	overflow-y: hidden; /* helps get rid of some problems that occurred when multiple Ryu's are displayed concurrently */
+}
+/* styling ryu image divs */
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+	width: 659px;
+	height: 494px; 	
+}
+.ryu-ready, .ryu-throwing, .ryu-cool {
+	display: none; 
+}
+.ryu-ready {
+	background-image: url('../images/ryu-ready-position.gif');
+}
+.ryu-still {
+	background-image: url('../images/ryu-standing-still.png');
+}
+.ryu-throwing {
+	background-image: url('../images/ryu-throwing-hadouken.png');
+}
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+	background-repeat: no-repeat;
+}
+/* styling hadouken div */
+.hadouken {
+	background-image: url('../images/hadouken.gif');
+	width: 156px;
+	height: 90px;
+	display: none;
+	float: left;
+	position: absolute;
+	top: 167px;
+	left: 520px; 
+	z-index: 10; 
+}
+/* styling intructions div */
+.instructions {
+	position: relative;
+	top: -425px;
+	left: 604px; 
+	width: 475px;
+	z-index: 5; 
+
+}
+.instructions p {
+	font-size: 32px;
+	color: red;
+	line-height: 42px; 
+}
+
